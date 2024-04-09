@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<header>
+    State Budget Analysis
+</header>
+
+<main>
+    <div class="grid-container">
+        <div class="debt">
+            <h2 style="text-align: center"> State Debt </h2>
+            <div class="chartBox" style="align-content: center; width: 80%; height: 200px; margin-left: 100px; margin-right: 100px">
+                <canvas class="bar-chart"></canvas>
+            </div>
+        </div>
+
+        <hr style="background-color: #100f0f">
+
+        <div class="expenditure">
+            <div class="year-tag" style="height: fit-content">Actuals 2019 - 20</div>
+            <div class="row-1">
+                <div class="align-center-horizontally">
+                    <h4>Total Budgetary Expenditure</h4>
+                    <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
+                        ₹ 2,71,757 Cr.
+                    </div>
+                    <h4>Total Receipts Budget</h4>
+                    <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
+                        ₹ 2,10,200 Cr.
+                    </div>
+                    <h4>Total Fiscal Deficit</h4>
+                    <div style="color: #050505; font-size: 20px; font-weight: 700">
+                        ₹ 61,557 Cr.
+                    </div>
+                    <h4>Interest Paid for Previous Year</h4>
+                    <div style="color: #050505; font-size: 20px; font-weight: 700">
+                        ₹ 31,342 Cr.
+                    </div>
+                </div>
+
+                <div class="chartBox">
+                    <canvas id="pie-chart"></canvas>
+                </div>
+
+            </div>
+
+            <div class="row-2">
+                <div class="table-max-share vis-table" style="align-content: center">
+                    <h3 class="vis-table-title">Budget Allocation for Welfare Schemes</h3>
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Category</th>
+                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Budget Allocation (%)</th>
+                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Budget Allocated</th>
+                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">People Benefited</th>
+                        </tr>
+                        <tr class="odd">
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Rythu Barosa</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6.02 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">60,487 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">21,78,77</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Dalit Bandhu</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6.02 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">49,600 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6,78,77</td>
+                        </tr>
+                        <tr class="odd">
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Rythu Bandhu</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.93 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">38,230 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,31,232</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Kalyana Lakshmi/ Shaadi Mubarak
+                            </td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">30,543 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,10,022</td>
+                        </tr>
+                        <tr class="odd">
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Aasara Pension Scheme</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">9,131 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,08,544</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">2BHK Housing Scheme</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">7,987 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,02,022</td>
+                        </tr>
+                        <tr class="odd">
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">KCR Kit Scheme</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6,765 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">60,099</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+        <hr style="background-color: #100f0f">
+
+
+        <div class="expenditure">
+            <div class="year-tag" style="height: fit-content">Actuals 2020 - 21</div>
+            <div class="row-1">
+                <div class="align-center-horizontally">
+                    <h4>Total Budgetary Expenditure</h4>
+                    <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
+                        ₹ 2,71,757 Cr.
+                    </div>
+                    <h4>Total Receipts Budget</h4>
+                    <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
+                        ₹ 2,10,200 Cr.
+                    </div>
+                    <h4>Total Fiscal Deficit</h4>
+                    <div style="color: #050505; font-size: 20px; font-weight: 700">
+                        ₹ 61,557 Cr.
+                    </div>
+                    <h4>Interest Paid for Previous Year</h4>
+                    <div style="color: #050505; font-size: 20px; font-weight: 700">
+                        ₹ 31,342 Cr.
+                    </div>
+                </div>
+
+                <div class="chartBox">
+                    <canvas id="pie-chart-2"></canvas>
+                </div>
+
+            </div>
+
+            <div class="row-2">
+                <div class="table-max-share vis-table" style="align-content: center">
+                    <h3 class="vis-table-title">Budget Allocation for Welfare Schemes</h3>
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Category</th>
+                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Budget Allocation (%)</th>
+                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Budget Allocated</th>
+                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">People Benefited</th>
+                        </tr>
+                        <tr class="odd">
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Rythu Barosa</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6.02 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">60,487 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">21,78,77</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Dalit Bandhu</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6.02 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">49,600 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6,78,77</td>
+                        </tr>
+                        <tr class="odd">
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Rythu Bandhu</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.93 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">38,230 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,31,232</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Kalyana Lakshmi/ Shaadi Mubarak
+                            </td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">30,543 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,10,022</td>
+                        </tr>
+                        <tr class="odd">
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Aasara Pension Scheme</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">9,131 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,08,544</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">2BHK Housing Scheme</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">7,987 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,02,022</td>
+                        </tr>
+                        <tr class="odd">
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">KCR Kit Scheme</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6,765 Cr.</td>
+                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">60,099</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+<footer></footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+<script src="js/pie-chart.js"></script>
+<script src="js/pie-chart-2.js"></script>
+<script src="js/simple-line-chart-3.js"></script>
+<script src="js/chartjs.js"></script>
+<script src="js/test.js"></script>
+<script src="js/vertical-bar-chart-2.js"></script>
+<script src="js/vertical-bar-chart.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+
+</html>
