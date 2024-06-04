@@ -38,22 +38,19 @@ const config = {
     options: {
         plugins: {
             legend: {
-                display: true
-            },
-            layout: {
-                padding: 10
+                display: false
             },
             labels:
-                {
-                    render: (args) => {
-                        return `${args.label}: ${args.percentage}%`
-                    },
-                    position: 'border',
-                    precision: 1,
-                    fontSize: 10,
-                    fontStyle: 'bolder',
-                    fontColor: 'rgba(0, 0, 0, 2)',
-                    display: true,
+            {
+                render: (args) => {
+                    return `${args.label}: ${args.percentage}%`
+                },
+                position: 'default',
+                precision: 1,
+                fontSize: 10,
+                fontStyle: 'bolder',
+                fontColor: 'rgba(0, 0, 0, 2)',
+                display: true,
             }
         }
     }

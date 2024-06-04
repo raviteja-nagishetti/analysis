@@ -66,7 +66,7 @@ const config2 = {
     options: {
         plugins: {
             legend: {
-                display: true,
+                display: false,
                 fontStyle: 'bolder'
             },
             labels:
@@ -74,7 +74,10 @@ const config2 = {
                     render: (args) => {
                         return `${args.label} : ${args.percentage}%`
                     },
-                    position: 'border',
+                    position: 'default',
+                    overlap: true,
+                    outsidePadding: 4,
+                    textMargin: 4,
                     precision: 1,
                     fontSize: 10,
                     fontStyle: 'bolder',

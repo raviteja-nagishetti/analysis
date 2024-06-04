@@ -30,7 +30,7 @@
     <div class="container" style="background-color: white">
         <div class="row">
             <h2 style="text-align: center"> State Debt </h2>
-            <div style="align-content: center;">
+            <div style="align-content: center; height: 250px;">
                 <canvas class="bar-chart"></canvas>
             </div>
         </div>
@@ -40,88 +40,88 @@
         <div class="row">
             <div class="year-tag" style="height: fit-content">Actuals 2019 - 20</div>
             <div class="row">
-                <div class="col align-center-horizontally">
+                <div class="col align-center-horizontally" style="padding: 10px;">
                     <h5>Total Budgetary Expenditure</h5>
-                    <div style="color: #050505; font-size: 15px; font-weight: 700; padding-bottom: 10px">
+                    <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
                         ₹ 2,71,757 Cr.
                     </div>
                     <h5>Total Receipts Budget</h5>
-                    <div style="color: #050505; font-size: 15px; font-weight: 700; padding-bottom: 10px">
+                    <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
                         ₹ 2,10,200 Cr.
                     </div>
                     <h5>Total Fiscal Deficit</h5>
-                    <div style="color: #050505; font-size: 15px; font-weight: 700">
+                    <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
                         ₹ 61,557 Cr.
                     </div>
                     <h5>Interest Paid for Previous Year</h5>
-                    <div style="color: #050505; font-size: 15px; font-weight: 700">
+                    <div style="color: #050505; font-size: 20px; font-weight: 700">
                         ₹ 31,342 Cr.
                     </div>
                 </div>
 
-                <div class="col align-center-horizontally" style="height: 400px">
-                    <canvas id="pie-chart"></canvas>
+                <div class="col align-center-horizontally">
+                    <div class="container-canvas-pie-chart">
+                        <canvas style="padding: 10px;" id="pie-chart" ></canvas>
+                    </div>
                 </div>
-
             </div>
 
             <div class="row">
-                <div class="table-max-share vis-table" style="align-content: center">
-                    <h3 class="vis-table-title">Budget Allocation for Welfare Schemes</h3>
-                    <table class="table">
-                        <tbody>
+                <h4 style="padding: 10px;">Budget Expenditure for Welfare Schemes</h4>
+                <table class="table table-striped table-bordered">
+                    <thead>
                         <tr>
-                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Category</th>
-                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Budget Allocation (%)</th>
-                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Budget Allocated</th>
-                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">People Benefited</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Budget Expenditure (%)</th>
+                            <th scope="col">Budget Expenditure </th>
+                            <th scope="col">People Benefited</th>
                         </tr>
-                        <tr class="odd">
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Rythu Barosa</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6.02 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">60,487 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">21,78,77</td>
-                        </tr>
+                    </thead>
+                    <tbody>
                         <tr>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Dalit Bandhu</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6.02 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">49,600 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6,78,77</td>
-                        </tr>
-                        <tr class="odd">
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Rythu Bandhu</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.93 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">38,230 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,31,232</td>
+                            <th>Rythu Barosa</th>
+                            <td>6.02 %</td>
+                            <td>60,487 Cr.</td>
+                            <td>21,78,77</td>
                         </tr>
                         <tr>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Kalyana Lakshmi/ Shaadi Mubarak
-                            </td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">30,543 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,10,022</td>
-                        </tr>
-                        <tr class="odd">
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Aasara Pension Scheme</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">9,131 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,08,544</td>
+                            <th>Dalit Bandhu</th>
+                            <td>6.02 %</td>
+                            <td>49,600 Cr.</td>
+                            <td>6,78,77</td>
                         </tr>
                         <tr>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">2BHK Housing Scheme</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">7,987 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,02,022</td>
+                            <th>Rythu Bandhu</th>
+                            <td>5.93 %</td>
+                            <td>38,230 Cr.</td>
+                            <td>1,31,232</td>
                         </tr>
-                        <tr class="odd">
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">KCR Kit Scheme</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6,765 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">60,099</td>
+                        <tr>
+                            <th>Kalyana Lakshmi/ Shaadi Mubarak </th>
+                            <td>5.83 %</td>
+                            <td>30,543 Cr.</td>
+                            <td>1,10,022</td>
                         </tr>
-                        </tbody>
-                    </table>
-                </div>
+                        <tr>
+                            <th>Aasara Pension Scheme</th>
+                            <td>5.83 %</td>
+                            <td>9,131 Cr.</td>
+                            <td>1,08,544</td>
+                        </tr>
+                        <tr>
+                            <th>2BHK Housing Scheme</th>
+                            <td>5.83 %</td>
+                            <td>7,987 Cr.</td>
+                            <td>1,02,022</td>
+                        </tr>
+                        <tr>
+                            <th>KCR Kit Scheme</th>
+                            <td>5.83 %</td>
+                            <td>6,765 Cr.</td>
+                            <td>60,099</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>
@@ -131,9 +131,9 @@
 
 
         <div class="row">
-            <div class="year-tag" style="height: fit-content">Actuals 2020 - 21</div>
+            <div class="year-tag" style="height: fit-content">Actuals 2019 - 20</div>
             <div class="row">
-                <div class="col align-center-horizontally">
+                <div class="col align-center-horizontally" style="padding: 10px;">
                     <h5>Total Budgetary Expenditure</h5>
                     <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
                         ₹ 2,71,757 Cr.
@@ -143,7 +143,7 @@
                         ₹ 2,10,200 Cr.
                     </div>
                     <h5>Total Fiscal Deficit</h5>
-                    <div style="color: #050505; font-size: 20px; font-weight: 700">
+                    <div style="color: #050505; font-size: 20px; font-weight: 700; padding-bottom: 10px">
                         ₹ 61,557 Cr.
                     </div>
                     <h5>Interest Paid for Previous Year</h5>
@@ -152,71 +152,73 @@
                     </div>
                 </div>
 
-                <div class="col align-center-horizontally" style="height: 400px">
-                    <canvas id="pie-chart-2"></canvas>
+                <div class="col align-center-horizontally">
+                    <div class="container-canvas-pie-chart">
+                        <canvas style="padding: 10px;" id="pie-chart-2"></canvas>
+                    </div>
                 </div>
-
             </div>
 
             <div class="row">
-                <div class="table-max-share vis-table" style="align-content: center">
-                    <h3 class="vis-table-title">Budget Allocation for Welfare Schemes</h3>
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Category</th>
-                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Budget Allocation (%)</th>
-                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">Budget Allocated</th>
-                            <th style="font-weight: 600; color: white; font-size: 14px; text-align: center">People Benefited</th>
-                        </tr>
-                        <tr class="odd">
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Rythu Barosa</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6.02 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">60,487 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">21,78,77</td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Dalit Bandhu</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6.02 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">49,600 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6,78,77</td>
-                        </tr>
-                        <tr class="odd">
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Rythu Bandhu</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.93 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">38,230 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,31,232</td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Kalyana Lakshmi/ Shaadi Mubarak
-                            </td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">30,543 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,10,022</td>
-                        </tr>
-                        <tr class="odd">
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">Aasara Pension Scheme</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">9,131 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,08,544</td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">2BHK Housing Scheme</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">7,987 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">1,02,022</td>
-                        </tr>
-                        <tr class="odd">
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">KCR Kit Scheme</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">5.83 %</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">6,765 Cr.</td>
-                            <td style="font-weight: 600; color: rgba(0, 0, 0); font-size: 14px; text-align: center">60,099</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <h4 style="padding: 10px;">Budget Expenditure for Welfare Schemes</h4>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Budget Expenditure (%)</th>
+                        <th scope="col">Budget Expenditure </th>
+                        <th scope="col">People Benefited</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>Rythu Barosa</th>
+                        <td>6.02 %</td>
+                        <td>60,487 Cr.</td>
+                        <td>21,78,77</td>
+                    </tr>
+                    <tr>
+                        <th>Dalit Bandhu</th>
+                        <td>6.02 %</td>
+                        <td>49,600 Cr.</td>
+                        <td>6,78,77</td>
+                    </tr>
+                    <tr>
+                        <th>Rythu Bandhu</th>
+                        <td>5.93 %</td>
+                        <td>38,230 Cr.</td>
+                        <td>1,31,232</td>
+                    </tr>
+                    <tr>
+                        <th>Kalyana Lakshmi/ Shaadi Mubarak </th>
+                        <td>5.83 %</td>
+                        <td>30,543 Cr.</td>
+                        <td>1,10,022</td>
+                    </tr>
+                    <tr>
+                        <th>Aasara Pension Scheme</th>
+                        <td>5.83 %</td>
+                        <td>9,131 Cr.</td>
+                        <td>1,08,544</td>
+                    </tr>
+                    <tr>
+                        <th>2BHK Housing Scheme</th>
+                        <td>5.83 %</td>
+                        <td>7,987 Cr.</td>
+                        <td>1,02,022</td>
+                    </tr>
+                    <tr>
+                        <th>KCR Kit Scheme</th>
+                        <td>5.83 %</td>
+                        <td>6,765 Cr.</td>
+                        <td>60,099</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
+
         </div>
+
     </div>
     </div>
 </main>
